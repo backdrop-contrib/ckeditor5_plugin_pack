@@ -11,33 +11,32 @@
 function ckeditor5_plugin_pack_media_embed_ckeditor5_plugins() {
   $module_path = backdrop_get_path('module', 'ckeditor5_media_embed');
 
-  // $plugins['mediaEmbed.MediaEmbed'] = array(
-  //   'buttons' => array(
-  //     'mediaEmbed' => array(
-  //       'label' => t('Insert media'),
-  //       'image' => $module_path . '/icons/media.svg',
-  //       'required_html' => array(
-  //         '<figure>',
-  //         '<figure class>',
-  //         // '<iframe>',
-  //         // '<iframe src allow allowfullscreen frameborder>',
-  //         '<div>',
-  //         '<div data-oembed-url>',
-  //         '<oembed>',
-  //       ),
-  //       'plugin_dependencies' => array('mediaEmbed.MediaEmbed'),
-  //       'config' => array(
-  //         'mediaEmbed' => array(
-  //           'previewsInData' => TRUE,
-  //           'removeProviders' => array(
-  //             'facebook', 'instagram', 'twitter', 'googleMaps', 'flickr',
-  //           ),
-  //         ),
-  //       ),
-  //     ),
-  //   ),
-  // );
-  $plugins = [];
+  $plugins['mediaEmbed.MediaEmbed'] = array(
+    'buttons' => array(
+      'mediaEmbed' => array(
+        'label' => t('Insert media'),
+        'image' => $module_path . '/icons/media.svg',
+        'required_html' => array(
+          '<figure>',
+          '<figure class>',
+          // '<iframe>',
+          // '<iframe src allow allowfullscreen frameborder>',
+          '<div>',
+          '<div data-oembed-url>',
+          '<oembed>',
+        ),
+        'plugin_dependencies' => array('mediaEmbed.MediaEmbed'),
+        'config' => array(
+          'mediaEmbed' => array(
+            'previewsInData' => TRUE,
+            'removeProviders' => array(
+              'facebook', 'instagram', 'twitter', 'googleMaps', 'flickr',
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
 
   return $plugins;
 
