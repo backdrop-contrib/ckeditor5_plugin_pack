@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * CKEditor 5 Plugin Pack Page Break
+ */
+
+/**
+ * Implements hook_ckeditor5_plugins().
+ *
+ */
+function ckeditor5_plugin_pack_page_break_ckeditor5_plugins() {
+  $module_path = backdrop_get_path('module', 'ckeditor5_plugin_pack_page_break');
+
+  $plugins['pageBreak.PageBreak'] = array(
+    'buttons' => array(
+      'pagebreak' => array(
+        'label' => t('Page Break'),
+        'image' => $module_path . '/icons/pagebreak.svg',
+        'required_html' => array(
+          '<div>',
+          '<div class>',
+          '<span>',
+        ),
+        'plugin_dependencies' => array('pageBreak.PageBreak'),
+      ),
+    ),
+  );
+
+  return $plugins;
+}

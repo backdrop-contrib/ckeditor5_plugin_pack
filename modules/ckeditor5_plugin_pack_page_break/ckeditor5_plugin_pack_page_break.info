@@ -1,0 +1,7 @@
+type = module
+name = CKEditor 5 Page Break Plugin
+description = Enables the CKEditor5 page break feature.
+backdrop = 1.x
+package = CKEditor 5 Plugin Pack
+
+dependencies[] = ckeditor5_plugin_pack

@@ -1,0 +1,9 @@
+type = module
+name = CKEditor 5 Highlight Plugin
+description = Provides the CKEditor 5 Highlight plugin.
+backdrop = 1.x
+package = CKEditor 5 Plugin Pack
+
+stylesheets[all][] = css/highlight.css
+
+dependencies[] = ckeditor5_plugin_pack

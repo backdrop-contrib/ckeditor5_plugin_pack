@@ -1,0 +1,6 @@
+name = CKEditor 5 Plugin Pack
+type = module
+description = Provides common functions for other modules in the Plugin Pack.
+package = CKEditor 5 Plugin Pack
+configure = admin/config/ckeditor5-plugin-pack
+dependencies[] = ckeditor5 (>=1.27)

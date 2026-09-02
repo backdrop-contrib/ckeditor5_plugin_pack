@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * CKEditor5 Highlight Plugin
+ */
+
+/**
+ * Implements hook_ckeditor5_plugins().
+ *
+ */
+function ckeditor5_plugin_pack_highlight_ckeditor5_plugins() {
+  $module_path = backdrop_get_path('module', 'ckeditor5_plugin_pack_highlight');
+
+  $plugins['highlight.Highlight'] = array(
+    'buttons' => array(
+      'highlight' => array(
+        'label' => t('Highlight'),
+        'image' => $module_path . '/icons/marker.svg',
+        'required_html' => array(
+          '<mark>',
+          '<mark class="marker-yellow marker-green marker-pink marker-blue pen-red pen-green">',
+        ),
+        'plugin_dependencies' => array('highlight.Highlight'),
+      ),
+    ),
+  );
+
+  return $plugins;
+}
