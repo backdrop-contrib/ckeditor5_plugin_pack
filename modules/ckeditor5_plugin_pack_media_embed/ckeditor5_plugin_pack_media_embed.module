@@ -25,14 +25,18 @@ function ckeditor5_plugin_pack_media_embed_ckeditor5_plugins() {
           '<div data-oembed-url>',
           '<oembed>',
         ),
-        'plugin_dependencies' => array('mediaEmbed.MediaEmbed'),
-        'config' => array(
-          'mediaEmbed' => array(
-            'previewsInData' => TRUE,
-            'removeProviders' => array(
-              'facebook', 'instagram', 'twitter',
-            ),
-          ),
+      ),
+    ),
+    'plugin_dependencies' => array(
+      'mediaEmbed.MediaEmbed',
+    ),
+    'config' => array(
+      'mediaEmbed' => array(
+        'previewsInData' => TRUE,
+        'removeProviders' => array(
+          'facebook',
+          'instagram',
+          'twitter',
         ),
       ),
     ),
