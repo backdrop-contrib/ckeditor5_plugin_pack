@@ -56,7 +56,7 @@ Bugs and Feature requests should be reported in the [Issue Queue](https://github
 ## Credits
 
 - Created for Backdrop by [Herb v/d Dool](https://github.com/herbdool) and
-  [Richard Peakock](https://github.com/swampopus).
+  [Richard Peacock](https://github.com/swampopus).
 - Inspired and borrowed from [equivalent Drupal module](https://www.drupal.org/project/ckeditor5_plugin_pack).
 
 ## License
