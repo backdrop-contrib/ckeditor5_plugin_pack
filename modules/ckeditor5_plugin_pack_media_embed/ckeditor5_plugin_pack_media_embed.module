@@ -40,6 +40,7 @@ function ckeditor5_plugin_pack_media_embed_ckeditor5_plugins() {
         ),
       ),
     ),
+    'enabled_callback' => TRUE,
   );
 
   return $plugins;
