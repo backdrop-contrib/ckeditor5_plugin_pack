@@ -50,7 +50,7 @@ Bugs and Feature requests should be reported in the [Issue Queue](https://github
 ## Current Maintainers
 
 - [Herb v/d Dool](https://github.com/herbdool)
-- [Richard Peakock](https://github.com/swampopus)
+- [Richard Peacock](https://github.com/swampopus)
 - Co-maintainers welcome
 
 ## Credits
