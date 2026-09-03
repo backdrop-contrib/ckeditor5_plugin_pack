@@ -9,7 +9,7 @@
  *
  */
 function ckeditor5_plugin_pack_media_embed_ckeditor5_plugins() {
-  $module_path = backdrop_get_path('module', 'ckeditor5_media_embed');
+  $module_path = backdrop_get_path('module', 'ckeditor5_plugin_pack_media_embed');
 
   $plugins['mediaEmbed.MediaEmbed'] = array(
     'buttons' => array(
@@ -30,7 +30,7 @@ function ckeditor5_plugin_pack_media_embed_ckeditor5_plugins() {
           'mediaEmbed' => array(
             'previewsInData' => TRUE,
             'removeProviders' => array(
-              'facebook', 'instagram', 'twitter', 'googleMaps', 'flickr',
+              'facebook', 'instagram', 'twitter',
             ),
           ),
         ),
