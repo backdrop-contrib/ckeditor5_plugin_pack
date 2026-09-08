@@ -19,32 +19,25 @@ function ckeditor5_plugin_pack_media_embed_ckeditor5_plugins() {
         'required_html' => array(
           '<figure>',
           '<figure class>',
-          // '<iframe>',
-          // '<iframe src allow allowfullscreen frameborder>',
-          '<div>',
-          '<div data-oembed-url>',
           '<oembed>',
         ),
-      ),
-    ),
-    'plugin_dependencies' => array(
-      'mediaEmbed.MediaEmbed',
-    ),
-    'config' => array(
-      'mediaEmbed' => array(
-        'previewsInData' => TRUE,
-        'removeProviders' => array(
-          'facebook',
-          'instagram',
-          'twitter',
+        'plugin_dependencies' => array(
+          'mediaEmbed.MediaEmbed',
+        ),
+        'config' => array(
+          'mediaEmbed' => array(
+            'previewsInData' => FALSE,
+            'removeProviders' => array(
+              'facebook',
+              'instagram',
+              'twitter',
+            ),
+          ),
         ),
       ),
     ),
-    'enabled_callback' => TRUE,
   );
 
   return $plugins;
 
 }
-
-// Mention video_filter could parse oembed. Or include it here?
