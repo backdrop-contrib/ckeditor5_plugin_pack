@@ -1,6 +1,6 @@
 type = module
 name = CKEditor 5 Media Embed Plugin
-description = Enables the CKEditor5 media embed feature.
+description = Enables the CKEditor5 media embed feature of displaying media previews during editing. Requires a separate module or integration to render the media after saving the content.
 backdrop = 1.x
 package = CKEditor 5 Plugin Pack
 
